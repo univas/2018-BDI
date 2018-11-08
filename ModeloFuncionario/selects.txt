@@ -1,0 +1,74 @@
+
+ select * from cargo;
+
+ select nome, salario from cargo;
+
+ select nome from cargo;
+
+ select nome, salario from cargo where salario > 3500;
+
+ select nome, salario from cargo where salario < 3500;
+
+ select nome from cargo where salario > 3500;
+
+ select nome, salario from cargo where salario > 3500 and salario < 7000;
+
+ select nome, salario from cargo where (salario > 3500 and salario < 7000) or salario < 2000;
+
+ select nome, salario from cargo where salario > 3500 and salario < 7000 or salario < 2000;
+
+ select nome, salario from cargo where salario < 2000 or salario > 3500 and salario < 7000;
+
+ select nome, salario from cargo where not salario < 2000
+
+ select nome, salario from cargo where not salario = 3000;
+
+ select nome, salario from cargo where not salario <> 3000;
+
+ select nome, salario from cargo where salario <> 3000;
+
+ select nome, salario from cargo where salario <> 3000 order by nome;
+
+ select nome, salario from cargo where salario <> 3000 order by salario;
+
+ select nome, salario from cargo where salario <> 3000 order by codigo;
+
+ select nome, salario, codigo from cargo where salario <> 3000 order by codigo;
+
+ select nome, salario, codigo from cargo where salario <> 3000 order by codigo desc;
+
+ select nome, salario, codigo from cargo where salario <> 3000 order by nome desc;
+
+ select nome, salario from cargo where salario < 6000 order by nome desc;
+
+ select nome, salario from cargo where salario < 6000 order by salario;
+
+ select nome, salario from cargo where salario < 6000 order by salario, nome;
+
+ select nome, salario from cargo where salario < 6000;
+
+ select nome, salario from cargo where nome = 'Tester';
+
+ select nome, salario from cargo where nome <> 'Tester';
+
+ select nome, salario from cargo where nome < 'Tester'; --não faz sentido
+
+ select nome, salario from cargo where nome < 'Gerente'; --não faz sentido
+
+ select nome, salario from cargo where nome < 'P'; --não faz sentido
+
+ select nome, salario from cargo where nome < 'P'; --deu certo :)
+
+ select nome from cargo where nome like 'A%';
+
+ select nome from cargo where nome like '%r';
+
+ select nome from cargo where nome like '%or';
+
+ select nome from cargo where nome like '%li%';
+
+ select nome from cargo where nome like '%e%';
+
+ select nome from cargo where nome like '%x%';
+
+ select nome from cargo where nome like '%G%';
