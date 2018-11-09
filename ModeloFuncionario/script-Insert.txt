@@ -16,7 +16,21 @@ VALUES (5, 'Técnico', 1500);
 INSERT INTO CARGO (CODIGO, NOME, SALARIO) 
 VALUES (6, 'Auxiliar', 1500);
 
+INSERT INTO DEPARTAMENTO (CODIGO, NOME) VALUES (1, 'Financeiro');
+INSERT INTO DEPARTAMENTO (CODIGO, NOME) VALUES (2, 'Informática');
+INSERT INTO DEPARTAMENTO (CODIGO, NOME) VALUES (3, 'Comercial');
 
+INSERT INTO FUNCIONARIO (registro, nome, nascimento, ativo, codigo_car, codigo_dep)
+VALUES (1, 'F1', NOW(), 1, 1, 1);
+
+INSERT INTO FUNCIONARIO (registro, nome, nascimento, ativo, codigo_car, codigo_dep)
+VALUES (2, 'F2', NOW(), 1, 2, 3);
+
+INSERT INTO FUNCIONARIO (registro, nome, nascimento, ativo, codigo_car, codigo_dep)
+VALUES (3, 'F3', NOW(), 1, 4, 2);
+
+INSERT INTO FUNCIONARIO (registro, nome, nascimento, ativo, codigo_car, codigo_dep)
+VALUES (4, 'F4', NOW(), 1, 2, 2);
 
 --UPDATE
 
